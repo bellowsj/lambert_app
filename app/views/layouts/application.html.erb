@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dr. Tom Shearman Chiropractic Clinic | <%= @title %></title>
+  <style type="text/css" title="css_main" media="screen">
+	@import "/stylesheets/css_main.css";
+  </style>
+<script type="text/javascript" src="/javascripts/jquery-latest.pack.js"></script>
+<script type="text/javascript" src="/javascripts/ztable.js"></script>
+  <%= csrf_meta_tag %>
+</head>
+<body marginheight="0" marginwidth="0" topmargin="0" leftmargin="0">
+<div id="bg">
+<div id="headerPIC"></div>
+<div id="site">
+<div id="header">
+	<style type="text/css" title="css_main" media="screen">
+	    	@import "/stylesheets/nav.css";
+		</style>
+<div id="headerLogin">
+<script src="/javascripts/jquery.ultramenu.js" type="text/javascript" charset="utf-8"></script><style type="text/css" title="css_main" media="screen">
+      @import "/stylesheets/jquery.ultramenu.css";
+    </style>
+<ul id="navPrime" class="ultramenu">
+<li>
+<% if @current_page == "home" %>
+	<%= link_to content_tag(:span, "HOME"), root_path, :id=>"ultramenuNav-HOME", :class=>"selected first", :target=>""%>
+<%else%>
+	<%= link_to content_tag(:span, "HOME"), root_path, :id=>"ultramenuNav-HOME", :class=>"", :target=>""%>
+<%end%>
+</li>
+<li>
+<% if @current_page == "forms" %>
+	<%= link_to content_tag(:span, "FORMS"), forms_path, :id=>"ultramenuNav-FORMS", :class=>"selected first", :target=>""%>
+<%else%>
+	<%= link_to content_tag(:span, "FORMS"), forms_path, :id=>"ultramenuNav-FORMS", :class=>"", :target=>""%>
+<%end%>
+</li>
+<li>
+<% if @current_page == "resources" %>
+	<%= link_to content_tag(:span, "RESOURCES"), resources_path, :id=>"ultramenuNav-RESOURCES", :class=>"selected first", :target=>""%>
+<%else%>
+	<%= link_to content_tag(:span, "RESOURCES"), resources_path, :id=>"ultramenuNav-RESOURCES", :class=>"", :target=>""%>
+<%end%>
+</li>
+<li>
+<% if @current_page == "payment" %>
+	<%= link_to content_tag(:span, "PAYMENT"), payment_path, :id=>"ultramenuNav-PAYMENT", :class=>"selected first", :target=>""%>
+<%else%>
+	<%= link_to content_tag(:span, "PAYMENT"), payment_path, :id=>"ultramenuNav-PAYMENT", :class=>"", :target=>""%>
+<%end%>
+</li>
+<li>
+<% if @current_page == "about" %>
+	<%= link_to content_tag(:span, "ABOUT"), about_path, :id=>"ultramenuNav-ABOUT", :class=>"selected first", :target=>""%>
+<%else%>
+	<%= link_to content_tag(:span, "RESOURCES"), about_path, :id=>"ultramenuNav-ABOUT", :class=>"", :target=>""%>
+<%end%>
+</li>
+<li>
+<% if @current_page == "services" %>
+	<%= link_to content_tag(:span, "SERVICES"), services_path, :id=>"ultramenuNav-SERVICES", :class=>"selected first", :target=>""%>
+<%else%>
+	<%= link_to content_tag(:span, "SERVICES"), services_path, :id=>"ultramenuNav-SERVICES", :class=>"", :target=>""%>
+<%end%>
+</li>
+<li>
+<% if @current_page == "hours" %>
+	<%= link_to content_tag(:span, "HOURS"), hours_path, :id=>"ultramenuNav-HOURS", :class=>"selected first", :target=>""%>
+<%else%>
+	<%= link_to content_tag(:span, "RESOURCES"), hours_path, :id=>"ultramenuNav-HOURS", :class=>"", :target=>""%>
+<%end%>
+</li>
+<li>
+<% if @current_page == "contact" %>
+	<%= link_to content_tag(:span, "CONTACT"), contact_path, :id=>"ultramenuNav-CONTACT", :class=>"selected first", :target=>""%>
+<%else%>
+	<%= link_to content_tag(:span, "CONTACT"), contact_path, :id=>"ultramenuNav-CONTACT", :class=>"", :target=>""%>
+<%end%>
+</li>
+</ul>
+<script type="text/javascript" charset="utf-8">
+        (function($) {
+
+          $('#navPrime').ultramenu();
+	
+        })(jQuery);
+</script>
+</div>
+</div>
+<div id="content">
+
+<div id="col_side">
+	<hr class="divider">
+	<div id="container_offer">
+		<div id="container_content">
+			<p>testing</p>
+		</div>
+	</div>
+</div>
+
+<div id="col_main">
+	<hr class="divider">
+	<%= yield %>
+</div>
+<div class="clearing"></div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-bannerRow"><div id="footer-centerAdjust"><div style="padding:30px 0px; text-align:center;">
+
+</div></div></div>
+<div id="footer-textRow"><div id="footer-centerAdjust"><div style="padding:30px 0px;">
+<a href="">Help</a> | 
+                <a href="">Newsletter</a> | 
+                <a href="javascript:;" onclick="window.open ('','terms','menubar=0,scrollbars=1,resizable=1,width=800,height=550');">Terms Of Use</a> | 
+                <a href="javascript:;" onclick="window.open ('','privacy','menubar=0,scrollbars=1,resizable=1,width=800,height=550');">Privacy Policy</a>
+</div></div></div>
+<script type="text/javascript">
+      
+      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+      </script><script type="text/javascript">
+      var pageTracker = _gat._getTracker("UA-856725-44");
+      pageTracker._setDomainName("");
+      pageTracker._initData();
+      pageTracker._trackPageview();
+      
+      if (typeof(googlePageTrackerData) !== 'undefined') {
+      
+        var trans = googlePageTrackerData.trans;
+  
+        pageTracker._addTrans(
+          trans.order_id,             // Order ID
+          trans.affiliations,          // Affiliation
+          trans.total,                // Total
+          trans.tax,                  // Tax
+          trans.shipping,             // Shipping
+          trans.city,                 // City
+          trans.state,                // State
+          trans.country               // Country
+        );
+  
+        var i, len;
+        var items = googlePageTrackerData.items;
+  
+        for (i = 0, len = items.length; i < len; ++i) {
+  
+          var item = items[i];
+  
+          pageTracker._addItem(
+            item.order_id,            // Order ID
+            item.sku,                 // SKU
+            item.product_name,        // Product Name 
+            item.category,            // Category
+            item.price,               // Price
+            item.quantity             // Quantity
+          );
+        }
+        
+        pageTracker._trackTrans();      
+      }
+      
+      </script>
+</div>
+</div>
+
+</body></html>
