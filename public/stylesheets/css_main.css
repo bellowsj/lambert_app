@@ -45,7 +45,7 @@ body	{
 }
 
 #headerPIC{
-	background: url(/images/bg/HeaderBg.jpg) top center no-repeat; /*taken out by Jason*/
+	background: url(/images/bg/HeaderBg2.jpg) top center no-repeat; /*taken out by Jason*/
 	height:227px;
 	/*width:1100px;*/
 	margin:0 auto;
@@ -67,17 +67,17 @@ body	{
 }
 
 #footer-bannerRow {
-	background-color: #336600;	
+	background-color: #333333;	
 }
 #footer-bannerRow .middle {
 	margin:0 40px;	
 }
 
 #footer-textRow {
-	background-color: #93BEC8;	
+	background-color: #549C27;	
 	color:#fff;
 }
-#footer-textRow a { color:#fff; }
+#footer-textRow a { color:#fff100; }
 
 
 
