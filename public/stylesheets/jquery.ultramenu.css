@@ -1,0 +1,35 @@
+ul.ultramenu {
+  position:relative;
+	*overflow:hidden; /* IE width hack */
+}
+
+ul.ultramenu, ul.ultramenu ul {
+  padding:0;
+  margin:0;
+}
+
+ul.ultramenu li {
+  list-style:none;
+  float:left;
+}
+
+ul.ultramenu li a {
+  display:block;
+	background-position: left top;
+  background-repeat: no-repeat;
+}
+
+ul.ultramenu a span {
+  display:none;
+}
+
+ul.ultramenu.ultramenu-textonly a span {
+  display:inline;
+}
+
+ul.ultramenu li ul {
+  position:absolute;
+  left:0;
+  width:100%;
+	*width:10000px; /* IE width hack */
+}

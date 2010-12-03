@@ -1,0 +1,110 @@
+#ultramenuNav-HOME { background-image:url(/images/nav/navHome.gif); width:62px; height:47px; }
+#ultramenuNav-FLOWERS { background-image:url(/images/nav/navFlowers.gif); width:82px; height:47px; }
+#ultramenuNav-VEGETABLES { background-image:url(/images/nav/navVegetables.gif); width:98px; height:47px; }
+#ultramenuNav-PLANTERS { background-image:url(/images/nav/navPlanters.gif); width:88px; height:47px; }
+#ultramenuNav-CONTACT { background-image:url(/images/nav/navContact.gif); width:98px; height:47px; }
+.spacing-nav-items { margin-right:5px; }
+
+
+#headerTop {
+	width: 780px;
+	height: 61px;
+	background:url(/images/nav/headerTop.gif) left top no-repeat;
+}
+
+#headerAnimate {
+	width: 780px;
+	height: 78px;
+}
+
+#headerLogin {
+	/*width: 970px;*/
+	height: 90px;
+}
+
+
+
+#navPrime {
+	margin:0;
+	padding-top:19px;
+	width: 860px;
+	float:left;	
+}
+
+#navPrime li {
+	list-style: none;
+	display: inline;
+}
+
+#navPrime a {
+	padding-right: 6px; /* horizontal position */
+	line-height: 47px; /* vertical position */
+	height: 47px;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+#navPrime a.first {
+	border-left:0 none transparent;
+}
+
+
+#navPrime a:hover,
+#navPrime a.current {
+	color: #7db7d4;
+}
+
+
+
+
+#navLogin {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: bold;
+	margin: 0px 0px 0px 0px;
+	padding: 8px 0px 0px 0px;
+	list-style: none;
+	/*width: 778px;
+	height: 48px;*/
+	float: right;
+	/*background: #363636 url(/images/nav/bgHor2.gif) repeat-x;*/
+	/*border-left: solid 1px #ccc;*/
+	/*border-right: solid 1px #ccc;*/
+	position: relative;
+}
+
+#navLogin li {
+	float: left;
+	padding-top:5px;
+}
+
+#navLogin a {
+	display: block;
+	padding-right:1px; /* horizontal position */
+	 /*line-height: 29px; vertical position */
+	text-decoration: none;
+	color: #fff;
+	float: left;
+	/*background:url(/images/nav/divider.gif) repeat-y left top;*/
+}
+
+
+/*#navLogin .first a {
+	background: none;
+}
+
+#navLogin .currentFirst a {
+	background: none;
+	color: #707070;
+}
+
+#navLogin ul a:hover {
+	color: #707070;
+}
+
+#navLogin a:hover, #navLogin .current a {
+	color: #707070;
+}*/
+
+.nav-icons {padding-left:200px;}
+.nav-icons img{margin:2px 0px 0px 5px;}

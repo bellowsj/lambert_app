@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Dr. Tom Shearman Chiropractic Clinic | <%= @title %></title>
+  <title>Lambert Floral | <%= @title %></title>
   <style type="text/css" title="css_main" media="screen">
 	@import "/stylesheets/css_main.css";
   </style>
@@ -30,45 +30,24 @@
 <%end%>
 </li>
 <li>
-<% if @current_page == "forms" %>
-	<%= link_to content_tag(:span, "FORMS"), forms_path, :id=>"ultramenuNav-FORMS", :class=>"selected first", :target=>""%>
+<% if @current_page == "flowers" %>
+	<%= link_to content_tag(:span, "FLOWERS"), flowers_path, :id=>"ultramenuNav-FLOWERS", :class=>"selected first", :target=>""%>
 <%else%>
-	<%= link_to content_tag(:span, "FORMS"), forms_path, :id=>"ultramenuNav-FORMS", :class=>"", :target=>""%>
+	<%= link_to content_tag(:span, "FLOWERS"), flowers_path, :id=>"ultramenuNav-FLOWERS", :class=>"", :target=>""%>
 <%end%>
 </li>
 <li>
-<% if @current_page == "resources" %>
-	<%= link_to content_tag(:span, "RESOURCES"), resources_path, :id=>"ultramenuNav-RESOURCES", :class=>"selected first", :target=>""%>
+<% if @current_page == "vegetables" %>
+	<%= link_to content_tag(:span, "VEGETABLES"), vegetables_path, :id=>"ultramenuNav-VEGETABLES", :class=>"selected first", :target=>""%>
 <%else%>
-	<%= link_to content_tag(:span, "RESOURCES"), resources_path, :id=>"ultramenuNav-RESOURCES", :class=>"", :target=>""%>
+	<%= link_to content_tag(:span, "VEGETABLES"), vegetables_path, :id=>"ultramenuNav-VEGETABLES", :class=>"", :target=>""%>
 <%end%>
 </li>
 <li>
-<% if @current_page == "payment" %>
-	<%= link_to content_tag(:span, "PAYMENT"), payment_path, :id=>"ultramenuNav-PAYMENT", :class=>"selected first", :target=>""%>
+<% if @current_page == "planters" %>
+	<%= link_to content_tag(:span, "PLANTERS"), planters_path, :id=>"ultramenuNav-PLANTERS", :class=>"selected first", :target=>""%>
 <%else%>
-	<%= link_to content_tag(:span, "PAYMENT"), payment_path, :id=>"ultramenuNav-PAYMENT", :class=>"", :target=>""%>
-<%end%>
-</li>
-<li>
-<% if @current_page == "about" %>
-	<%= link_to content_tag(:span, "ABOUT"), about_path, :id=>"ultramenuNav-ABOUT", :class=>"selected first", :target=>""%>
-<%else%>
-	<%= link_to content_tag(:span, "RESOURCES"), about_path, :id=>"ultramenuNav-ABOUT", :class=>"", :target=>""%>
-<%end%>
-</li>
-<li>
-<% if @current_page == "services" %>
-	<%= link_to content_tag(:span, "SERVICES"), services_path, :id=>"ultramenuNav-SERVICES", :class=>"selected first", :target=>""%>
-<%else%>
-	<%= link_to content_tag(:span, "SERVICES"), services_path, :id=>"ultramenuNav-SERVICES", :class=>"", :target=>""%>
-<%end%>
-</li>
-<li>
-<% if @current_page == "hours" %>
-	<%= link_to content_tag(:span, "HOURS"), hours_path, :id=>"ultramenuNav-HOURS", :class=>"selected first", :target=>""%>
-<%else%>
-	<%= link_to content_tag(:span, "RESOURCES"), hours_path, :id=>"ultramenuNav-HOURS", :class=>"", :target=>""%>
+	<%= link_to content_tag(:span, "PLANTERS"), planters_path, :id=>"ultramenuNav-PLANTERS", :class=>"", :target=>""%>
 <%end%>
 </li>
 <li>

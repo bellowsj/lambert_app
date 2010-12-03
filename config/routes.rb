@@ -1,4 +1,11 @@
 LambertApp::Application.routes.draw do
+  match 'contact', :to => 'pages#contact'
+  match 'flowers', :to => 'pages#flowers'
+  match 'vegetables', :to => 'pages#vegetables'
+  match 'planters', :to => 'pages#planters'
+  
+  root :to => 'pages#home'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
