@@ -40,5 +40,12 @@ class FlowersController < ApplicationController
     @flowers_tab = true
     @active = "miscellaneous"
   end
+  
+  def new
+    @current_page = "flowers"
+    @title = "New Flowers for 2011"
+    @flowers_tab = true
+    @active = "new"
+  end
 
 end

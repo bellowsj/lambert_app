@@ -76,4 +76,11 @@ class VegetablesController < ApplicationController
     @active = "miscellaneous"
   end
 
+  def new
+    @current_page = "vegetables"
+    @title = "New Vegetables for 2011"
+    @veggies_tab = true
+    @active = "new"
+  end
+
 end
