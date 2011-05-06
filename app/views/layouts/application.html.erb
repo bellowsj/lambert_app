@@ -73,9 +73,7 @@
 </ul>
 <script type="text/javascript" charset="utf-8">
         (function($) {
-
           $('#navPrime').ultramenu();
-	
         })(jQuery);
 </script>
 </div>
@@ -92,7 +90,11 @@
 # </div>
 %>
 <div id="col_main">
-	<hr class="divider">
+	<%if @flowers_tab %>
+		<%= render 'layouts/flowers_header' %>
+	<% elsif @veggies_tab %>
+		<%= render 'layouts/veggies_header' %>
+	<% end%>
 	<%= yield %>
 </div>
 <div class="clearing"></div>

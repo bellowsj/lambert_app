@@ -9,16 +9,6 @@ class PagesController < ApplicationController
     @title = "Contact Us"
   end
 
-  def flowers
-    @current_page = "flowers"
-    @title = "Our Flowers"
-  end
-
-  def vegetables
-    @current_page = "vegetables"
-    @title = "Our Vegetables"
-  end
-
   def planters
     @current_page = "planters"
     @title = "Our Planters, Pots and Hanging Baskets"

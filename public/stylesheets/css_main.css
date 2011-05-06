@@ -697,3 +697,61 @@ label.hint {
 .moreVideos {
 font-size:16px; font-weight:bold; margin-bottom:10px;
 }
+
+ul.tabs {
+	height:30px;
+	width:auto;
+	border-bottom:1px solid #336600;
+	clear:both;
+	position: relative;	
+}
+ul.tabs li{
+	display:inline;
+	line-height:1;
+}
+ul.tabs li a{
+	display:inline;
+	float:left;
+	width:auto;
+	margin:0;
+	padding:4px 10px 3px;
+	background-color: #549C27;
+	border:1px solid #336600;
+	padding-bottom: 1px;
+	line-height:24px;
+	border-radius:4px 4px 0 0;
+	-moz-border-radius:4px 4px 0 0;
+	-webkit-border-top-left-radius:4px;
+	-webkit-border-top-right-radius:4px;
+	overflow:hidden;
+	text-decoration: none;
+	color:#000;
+}
+ul.tabs li a:hover{
+	background-color: #FEF200;
+	text-decoration:underline;
+	padding-bottom:2px;
+	padding-bottom: 1px;
+	color:#000;
+}
+ul.tabs li.active a{
+	background:#fff;
+	border:1px solid #336600;
+	padding-bottom:2px;
+	color:#333;
+	font-weight:bold;
+	padding-top:3px;
+}
+ul.tabs li.active a:hover{
+	padding-bottom:2px;
+	text-decoration:none;
+}
+.clearfix {
+}
+.clearfix:after {
+	clear: both;
+	content: ".";
+	display: block;
+	height: 0;
+	visibility: hidden;
+}

@@ -1,6 +1,31 @@
 LambertApp::Application.routes.draw do
+
+  resources :vegetables do
+    collection do
+      get 'tomatoes'
+      get 'peppers'
+      get 'herbs'
+      get 'melons'
+      get 'cucumbers'
+      get 'gourds'
+      get 'pumpkins'
+      get 'squash'
+      get 'space_savers'
+      get 'miscellaneous'
+    end
+  end
+
+  resources :flowers do
+    collection do
+      get 'petunias'
+      get 'marigolds'
+      get 'perennials'
+      get 'premium'
+      get 'miscellaneous'
+    end
+  end
+
   match 'contact', :to => 'pages#contact'
-  match 'flowers', :to => 'pages#flowers'
   match 'vegetables', :to => 'pages#vegetables'
   match 'planters', :to => 'pages#planters'
   
