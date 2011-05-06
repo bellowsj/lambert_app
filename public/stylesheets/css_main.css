@@ -128,7 +128,7 @@ body	{
 }
 
 #col_main {
-	width: 550px;
+	width: 950px; /* used to be just 550 but since I removed the col_side then use that space too */
 	float: left;
 }
 
