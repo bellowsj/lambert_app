@@ -41,13 +41,6 @@ class VegetablesController < ApplicationController
     @active = "cucumbers"
   end
 
-  def gourds
-    @current_page = "vegetables"
-    @title = "Gourds"
-    @veggies_tab = true
-    @active = "gourds"
-  end
-
   def pumpkins
     @current_page = "vegetables"
     @title = "Pumpkins"
