@@ -5,6 +5,10 @@
 				<h1 class="newsHead"><%= @title %></h1>
 					<p>
 						<ul>
+							<% @cucumbers.each do |cucumber| %>
+								<li><%= cucumber.name %></li>
+							<% end %>
+							<br><br>
 							<li>Cucumber, Armenian</li>
 							<li>Cucumber, Burpless Gourmet</li>
 							<li>Cucumber, Diva</li>

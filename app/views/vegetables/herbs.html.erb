@@ -5,6 +5,10 @@
 				<h1 class="newsHead"><%= @title %></h1>
 					<p>
 						<ul>
+							<% @herbs.each do |herb| %>
+								<li><%= herb.name %></li>
+							<% end %>
+							<br><br>
 							<li>Anise</li>
 							<li>Basil Boxwood</li>
 							<li>Basil cinnamon</li>

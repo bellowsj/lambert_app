@@ -5,6 +5,10 @@
 				<h1 class="newsHead"><%= @title %></h1>
 					<p>
 						<ul>
+							<% @squash.each do |sq| %>
+								<li><%= sq.name %></li>
+							<% end %>
+							<br><br>
 							<li>Squash, Banana Jumbo Pink</li>
 							<li>Squash, Barq (Middle Eastern)</li>
 							<li>Squash, Bitter Mellon Delicata Thorn</li>

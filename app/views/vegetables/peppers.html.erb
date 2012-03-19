@@ -5,6 +5,10 @@
 				<h1 class="newsHead"><%= @title %></h1>
 					<p>
 						<ul>
+							<% @peppers.each do |pepper| %>
+								<li><%= pepper.name %></li>
+							<% end %>
+							<br><br>
 							<li>Anaheim</li>
 							<li>Ancho Grande Poblano</li>
 							<li>Better Belle</li>

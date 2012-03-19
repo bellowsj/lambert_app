@@ -5,6 +5,10 @@
 				<h1 class="newsHead"><%= @title %></h1>
 					<p>
 						<ul>
+							<% @new_veggies.each do |veg| %>
+								<li><%= veg.name %></li>
+							<% end %>
+							<br><br>
 							<li>Tomato Patio Tasty Cherry</li>
 							<li>Tomato Tumbling Tiger</li>
 							<li>Tomato Tasty Window Box Roma</li>

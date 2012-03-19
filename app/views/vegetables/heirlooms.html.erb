@@ -5,6 +5,10 @@
 				<h1 class="newsHead"><%= @title %></h1>
 					<p>
 						<ul>
+							<% @heirlooms.each do |heirloom| %>
+								<li><%= heirloom.name %></li>
+							<% end %>
+							<br><br>
 							<li>Artichoke Green Globe</li>
 							<li>Broccoli, Coronado Crown</li>
 							<li>Brocoverde (Caulibroc) broccoflower</li>

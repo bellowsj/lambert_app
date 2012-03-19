@@ -5,6 +5,10 @@
 				<h1 class="newsHead"><%= @title %></h1>
 					<p>
 						<ul>
+							<% @melons.each do |melon| %>
+								<li><%= melon.name %></li>
+							<% end %>
+							<br><br>
 							<li>Cantaloupe, Metki(Wh. Serpent Melon)</li>
 							<li>Cantaloupe, Orange Flesh</li>
 							<li>Cantaloupe, Superstar</li>

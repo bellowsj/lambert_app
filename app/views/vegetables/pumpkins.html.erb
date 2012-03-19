@@ -5,6 +5,10 @@
 				<h1 class="newsHead"><%= @title %></h1>
 					<p>
 						<ul>
+							<% @pumpkins.each do |pumpkin| %>
+								<li><%= pumpkin.name %></li>
+							<% end %>
+							<br><br>
 							<li>Pumpkin, Atlantic Giant</li>
 							<li>Pumpkin, Big Max</li>
 							<li>Pumpkin, Munchkin</li>
