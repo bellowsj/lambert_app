@@ -88,7 +88,7 @@ class VegetablesController < ApplicationController
 
   def new
     @current_page = "vegetables"
-    @title = "New Vegetables for 2011"
+    @title = "New Vegetables for 2012"
     @veggies_tab = true
     @active = "new"
     @new_veggies = NewVeggie.find(:all).sort_by{|p| p.name.downcase}
