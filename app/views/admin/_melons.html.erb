@@ -1,0 +1,8 @@
+<ul>
+<% @melons.each do |melon| %>
+	<li><%= melon.name %> <%= link_to 'Delete', 
+	      { :controller => 'admin', :action => 'delete_melon', :id => melon.id },
+	      { :remote => true} %>
+	</li>
+<% end %>
+</ul>

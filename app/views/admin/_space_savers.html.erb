@@ -1,0 +1,8 @@
+<ul>
+<% @space_savers.each do |ss| %>
+	<li><%= ss.name %> <%= link_to 'Delete', 
+	      { :controller => 'admin', :action => 'delete_space_saver', :id => ss.id },
+	      { :remote => true} %>
+	</li>
+<% end %>
+</ul>

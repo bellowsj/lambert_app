@@ -1,0 +1,8 @@
+<ul>
+<% @squash.each do |s| %>
+	<li><%= s.name %> <%= link_to 'Delete', 
+	      { :controller => 'admin', :action => 'delete_squash', :id => s.id },
+	      { :remote => true} %>
+	</li>
+<% end %>
+</ul>

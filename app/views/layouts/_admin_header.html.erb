@@ -1,0 +1,24 @@
+<h1>Flowers</h1>
+<ul class="tabs clearfix">
+	<li <% if @active == "petunias" %>class="active"<%end%>><%= link_to "Petunias", "/admin/petunias" %></li>
+	<li <% if @active == "marigolds" %>class="active"<%end%>><%= link_to "Marigolds", "/admin/marigolds" %></li>
+	<li <% if @active == "perennials" %>class="active"<%end%>><%= link_to "Perennials", "/admin/perennials" %></li>
+	<li <% if @active == "premium" %>class="active"<%end%>><%= link_to "Premium", "/admin/premium" %></li>
+	<li <% if @active == "flowers_miscellaneous" %>class="active"<%end%>><%= link_to "Miscellaneous", "/admin/flowers_miscellaneous" %></li>
+	<li <% if @active == "flowers_new" %>class="active"<%end%>><%= link_to "New for 2012", "/admin/flowers_new" %></li>
+</ul>
+
+<h1>Veggies</h1>
+<ul class="tabs clearfix">
+	<li <% if @active == "tomatoes" %>class="active"<%end%>><%= link_to "Tomatoes", "/admin/tomatoes" %></li>
+	<li <% if @active == "peppers" %>class="active"<%end%>><%= link_to "Peppers", "/admin/peppers" %></li>
+	<li <% if @active == "herbs" %>class="active"<%end%>><%= link_to "Herbs", "/admin/herbs" %></li>
+	<li <% if @active == "melons" %>class="active"<%end%>><%= link_to "Melons", "/admin/melons" %></li>
+	<li <% if @active == "cucumbers" %>class="active"<%end%>><%= link_to "Cucumbers", "/admin/cucumbers" %></li>
+	<li <% if @active == "pumpkins" %>class="active"<%end%>><%= link_to "Pumpkins", "/admin/pumpkins" %></li>
+	<li <% if @active == "squash" %>class="active"<%end%>><%= link_to "Squash", "/admin/squash" %></li>
+	<li <% if @active == "space_savers" %>class="active"<%end%>><%= link_to "Space Savers", "/admin/space_savers" %></li>
+	<li <% if @active == "veggies_miscellaneous" %>class="active"<%end%>><%= link_to "Miscellaneous", "/admin/veggies_miscellaneous" %></li>
+	<li <% if @active == "heirlooms" %>class="active"<%end%>><%= link_to "Heirlooms", "/admin/heirlooms" %></li>
+	<li <% if @active == "veggies_new" %>class="active"<%end%>><%= link_to "New for 2012", "/admin/veggies_new" %></li>
+</ul>

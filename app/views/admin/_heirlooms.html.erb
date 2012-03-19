@@ -1,0 +1,8 @@
+<ul>
+<% @heirlooms.each do |heirloom| %>
+	<li><%= heirloom.name %> <%= link_to 'Delete', 
+	      { :controller => 'admin', :action => 'delete_heirloom', :id => heirloom.id },
+	      { :remote => true} %>
+	</li>
+<% end %>
+</ul>

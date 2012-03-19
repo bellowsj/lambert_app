@@ -1,0 +1,8 @@
+<ul>
+<% @perennials.each do |perennial| %>
+	<li><%= perennial.name %> <%= link_to 'Delete', 
+	      { :controller => 'admin', :action => 'delete_perennial', :id => perennial.id },
+	      { :remote => true} %>
+	</li>
+<% end %>
+</ul>

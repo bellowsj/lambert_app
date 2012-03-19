@@ -1,0 +1,43 @@
+<script type="text/javascript">
+	$(document).ready(function() {
+	  $('input:text:last').focus();
+	});
+</script>
+<% if flash[:notice] -%>
+  <div id="notice"><%= flash[:notice] %></div><br>
+<% end -%>
+<div class="span-10 colborder">
+<%= form_for(:session, :url => sessions_path, :html => {:class => 'login_form'}) do |f| %>
+	<h3>Sign In</h3>
+	<fieldset class="signin-form">
+		<table cellspacing="0">
+			<tbody>
+				<tr>
+					<th>
+						<%= f.label :email, "Email" %>
+					</th>
+					<td>
+    					<%= f.text_field :email %>
+					</td>
+				</tr>
+				<tr>
+					<th>
+    					<%= f.label :password, "Password" %>
+					</th>
+					<td>
+						<%= f.password_field :password %>
+					</td>
+				</tr>
+				<tr>
+					<th></th>
+					<td>
+						<a class="button-primary">
+    						<%= f.submit "Log In" %>
+						</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</fieldset>
+<% end %>
+</div>

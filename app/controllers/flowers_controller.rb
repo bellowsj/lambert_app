@@ -11,6 +11,7 @@ class FlowersController < ApplicationController
     @title = "Petunias"
     @flowers_tab = true
     @active = "petunias"
+    @petunias = Petunia.find(:all).sort_by{|p| p.name.downcase}
   end
 
   def marigolds
@@ -18,6 +19,7 @@ class FlowersController < ApplicationController
     @title = "Marigolds"
     @flowers_tab = true
     @active = "marigolds"
+    @marigolds = Marigold.find(:all).sort_by{|p| p.name.downcase}
   end
 
   def perennials
@@ -25,6 +27,7 @@ class FlowersController < ApplicationController
     @title = "Perennials"
     @flowers_tab = true
     @active = "perennials"
+    @perennials = Perennial.find(:all).sort_by{|p| p.name.downcase}
   end
 
   def premium
@@ -32,6 +35,7 @@ class FlowersController < ApplicationController
     @title = "Premium Flowers"
     @flowers_tab = true
     @active = "premium"
+    @premiums = Premium.find(:all).sort_by{|p| p.name.downcase}
   end
 
   def miscellaneous
@@ -39,6 +43,7 @@ class FlowersController < ApplicationController
     @title = "Miscellaneous Flowers"
     @flowers_tab = true
     @active = "miscellaneous"
+    @misc_flowers = MiscellaneousFlower.find(:all).sort_by{|p| p.name.downcase}
   end
   
   def new
@@ -46,6 +51,7 @@ class FlowersController < ApplicationController
     @title = "New Flowers for 2011"
     @flowers_tab = true
     @active = "new"
+    @new_flowers = NewFlower.find(:all).sort_by{|p| p.name.downcase}
   end
 
 end

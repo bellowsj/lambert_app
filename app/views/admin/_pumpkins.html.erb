@@ -1,0 +1,8 @@
+<ul>
+<% @pumpkins.each do |pumpkin| %>
+	<li><%= pumpkin.name %> <%= link_to 'Delete', 
+	      { :controller => 'admin', :action => 'delete_pumpkin', :id => pumpkin.id },
+	      { :remote => true} %>
+	</li>
+<% end %>
+</ul>

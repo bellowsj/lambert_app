@@ -1,0 +1,8 @@
+<ul>
+<% @petunias.each do |petunia| %>
+	<li><%= petunia.name %> <%= link_to 'Delete', 
+	      { :controller => 'admin', :action => 'delete_petunia', :id => petunia.id },
+	      { :remote => true} %>
+	</li>
+<% end %>
+</ul>

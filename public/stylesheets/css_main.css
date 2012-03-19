@@ -203,45 +203,6 @@ body	{
 	text-align: left;
 }
 
-#container_home {
-	margin: 0px 20px 0px 10px;
-	background: url(/images/sectionheaders/HomeHeader.png)  top left no-repeat;
-}
-
-#container_resources {
-	margin: 0px 20px 0px 10px;
-	background: url(/images/sectionheaders/ResourcesHeader.png)  top left no-repeat;
-}
-
-#container_payment {
-	margin: 0px 20px 0px 10px;
-	background: url(/images/sectionheaders/PaymentHeader.png)  top left no-repeat;
-}
-
-#container_forms {
-	margin: 0px 20px 0px 10px;
-	background: url(/images/sectionheaders/FormsHeader.png)  top left no-repeat;
-}
-
-#container_about {
-	margin: 0px 20px 0px 10px;
-	background: url(/images/sectionheaders/AboutHeader.png)  top left no-repeat;
-}
-
-#container_services {
-	margin: 0px 20px 0px 10px;
-	background: url(/images/sectionheaders/ServicesHeader.png)  top left no-repeat;
-}
-
-#container_hours {
-	margin: 0px 20px 0px 10px;
-	background: url(/images/sectionheaders/HoursHeader.png)  top left no-repeat;
-}
-
-#container_contact {
-	margin: 0px 20px 0px 10px;
-	background: url(/images/sectionheaders/ContactHeader.png)  top left no-repeat;
-}
 
 /* Side Column Content */
 #container_offer {

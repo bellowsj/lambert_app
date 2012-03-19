@@ -1,0 +1,8 @@
+<ul>
+<% @marigolds.each do |marigold| %>
+	<li><%= marigold.name %> <%= link_to 'Delete', 
+	      { :controller => 'admin', :action => 'delete_marigold', :id => marigold.id },
+	      { :remote => true} %>
+	</li>
+<% end %>
+</ul>

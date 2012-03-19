@@ -1,0 +1,8 @@
+<ul>
+<% @premiums.each do |premium| %>
+	<li><%= premium.name %> <%= link_to 'Delete', 
+	      { :controller => 'admin', :action => 'delete_premium', :id => premium.id },
+	      { :remote => true} %>
+	</li>
+<% end %>
+</ul>

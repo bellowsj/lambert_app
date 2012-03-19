@@ -1,39 +1,41 @@
-<div id="container_contact">
-	<div id="container_content">
-		<div class="newsItem">
-			<div class="newsBody">
-				<span style="font-size: 10.5pt;" trebuchet="" ms="" ,="" sans-serif="" ;="">
-					<h1 class="newsHead"><%= @title %></h1>
-						<p>
-							<ul>
-								<li>Achillea Yarrow Summer</li>
-								<li>Aquilegia Colum McKana's Giant</li>
-								<li>Basket of Gold Alys Saxatile</li>
-								<li>Carnation Grenadin Mix</li>
-								<li>Daisy Shasta Alaska (24")</li>
-								<li>Daisy Shasta Snow Lady (10")</li>
-								<li>Daisy, Crazy</li>
-								<li>Dianthus, Sweet William Indian Carpet</li>
-								<li>Digitalis Foxy, foxglove</li>
-								<li>Gaillardia Arizona Sun</li>
-								<li>Gypsophila Double Snowflake</li>
-								<li>Hibiscus Luna Red</li>
-								<li>Hollyhocks Chatter's Double Mix</li>
-								<li>Poppy, Allegro Oriental</li>
-								<li>Rudbeckia, Becky</li>
-								<li>Rudbeckia, Goldsturm</li>
-								<li>Salvia, Superba Blue Queen</li>
-								<li>Violas, Penny Lane Mix</li>
-								<li>Violas, Ruby & Gold Baby Face</li>
-								<li>Violas, Sorbet Citrus Mix</li>
-								<li>Violas, Sorbet Icy Blue</li>
-								<li>Violas, Sorbet Lemon Chiffon</li>
-								<li>Violas, Sorbet Orange Duet</li>
-								<li>Violas, Sorbet Plum Velvet</li>
-							</ul>
-						</p>
-				</span>
-			</div>
+<div id="container_content">
+	<div class="newsItem">
+		<div class="newsBody">
+			<span style="font-size: 10.5pt;" trebuchet="" ms="" ,="" sans-serif="" ;="">
+				<h1 class="newsHead"><%= @title %></h1>
+					<p>
+						<ul>
+							<% @perennials.each do |perennial| %>
+								<li><%= perennial.name %></li>
+							<% end %>
+							<br><br>
+							<li>Achillea Yarrow Summer</li>
+							<li>Aquilegia Colum McKana's Giant</li>
+							<li>Basket of Gold Alys Saxatile</li>
+							<li>Carnation Grenadin Mix</li>
+							<li>Daisy Shasta Alaska (24")</li>
+							<li>Daisy Shasta Snow Lady (10")</li>
+							<li>Daisy, Crazy</li>
+							<li>Dianthus, Sweet William Indian Carpet</li>
+							<li>Digitalis Foxy, foxglove</li>
+							<li>Gaillardia Arizona Sun</li>
+							<li>Gypsophila Double Snowflake</li>
+							<li>Hibiscus Luna Red</li>
+							<li>Hollyhocks Chatter's Double Mix</li>
+							<li>Poppy, Allegro Oriental</li>
+							<li>Rudbeckia, Becky</li>
+							<li>Rudbeckia, Goldsturm</li>
+							<li>Salvia, Superba Blue Queen</li>
+							<li>Violas, Penny Lane Mix</li>
+							<li>Violas, Ruby & Gold Baby Face</li>
+							<li>Violas, Sorbet Citrus Mix</li>
+							<li>Violas, Sorbet Icy Blue</li>
+							<li>Violas, Sorbet Lemon Chiffon</li>
+							<li>Violas, Sorbet Orange Duet</li>
+							<li>Violas, Sorbet Plum Velvet</li>
+						</ul>
+					</p>
+			</span>
 		</div>
 	</div>
 </div>

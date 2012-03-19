@@ -68,6 +68,13 @@ class VegetablesController < ApplicationController
     @veggies_tab = true
     @active = "miscellaneous"
   end
+  
+  def heirlooms
+    @current_page = "vegetables"
+    @title = "Heirlooms"
+    @veggies_tab = true
+    @active = "heirlooms"
+  end
 
   def new
     @current_page = "vegetables"

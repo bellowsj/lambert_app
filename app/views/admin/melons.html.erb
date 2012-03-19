@@ -1,0 +1,25 @@
+<script type="text/javascript">
+	$(document).ready(function() {
+	  $('input:text:last').focus();
+	});
+</script>
+
+<div id="container_content">
+	<div class="newsItem">
+		<div class="newsBody">
+			<span style="font-size: 10.5pt;" trebuchet="" ms="" ,="" sans-serif="" ;="">
+				<h1 class="newsHead"><%= @title %></h1><br>
+				<%= form_tag "/admin/new_melon", :remote => true do%>
+				  <div id= "post_errors" style="display:none"></div>
+				  <p>
+				    <%= label_tag "New" %>
+				    <%= text_field_tag :name %>
+				  	<%= submit_tag "Submit" %> (lists are sorted alphabetically)</p>
+				<% end %>
+				<div id="melon_list">
+					<%= render(:partial => "melons") %>
+				</div>
+			</span>
+		</div>
+	</div>
+</div>

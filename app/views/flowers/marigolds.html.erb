@@ -1,37 +1,39 @@
-<div id="container_contact">
-	<div id="container_content">
-		<div class="newsItem">
-			<div class="newsBody">
-				<span style="font-size: 10.5pt;" trebuchet="" ms="" ,="" sans-serif="" ;="">
-					<h1 class="newsHead"><%= @title %></h1>
-						<p>
-							<ul>
-								<li>Bonanza Bolero</li>
-								<li>Bonanza Gold</li>
-								<li>Bonanza Harmony</li>
-								<li>Bonanza Mix</li>
-								<li>Bonanza Orange</li>
-								<li>Bonanza Yellow</li>
-								<li>Gate, Golden</li>
-								<li>Gate, Yellow</li>
-								<li>Lemon Gem</li>
-								<li>Little Devil Fire</li>
-								<li>Safari Mix</li>
-								<li>Safari Red</li>
-								<li>Sunburst Yellow Splash</li>
-								<li>Coins, Double Eagle Orange</li>
-								<li>Coins, Doubloon Yellow</li>
-								<li>Inca Gold II</li>
-								<li>Inca Orange II</li>
-								<li>Inca Yellow II</li>
-								<li>Lady First Yellow</li>
-								<li>Lady Gold</li>
-								<li>Lady Orange</li>
-								<li>Marvel Vanilla</li>
-							</ul>
-						</p>
-				</span>
-			</div>
+<div id="container_content">
+	<div class="newsItem">
+		<div class="newsBody">
+			<span style="font-size: 10.5pt;" trebuchet="" ms="" ,="" sans-serif="" ;="">
+				<h1 class="newsHead"><%= @title %></h1>
+					<p>
+						<ul>
+							<% @marigolds.each do |merigold| %>
+								<li><%= merigold.name %></li>
+							<% end %>
+							<br><br>
+							<li>Bonanza Bolero</li>
+							<li>Bonanza Gold</li>
+							<li>Bonanza Harmony</li>
+							<li>Bonanza Mix</li>
+							<li>Bonanza Orange</li>
+							<li>Bonanza Yellow</li>
+							<li>Gate, Golden</li>
+							<li>Gate, Yellow</li>
+							<li>Lemon Gem</li>
+							<li>Little Devil Fire</li>
+							<li>Safari Mix</li>
+							<li>Safari Red</li>
+							<li>Sunburst Yellow Splash</li>
+							<li>Coins, Double Eagle Orange</li>
+							<li>Coins, Doubloon Yellow</li>
+							<li>Inca Gold II</li>
+							<li>Inca Orange II</li>
+							<li>Inca Yellow II</li>
+							<li>Lady First Yellow</li>
+							<li>Lady Gold</li>
+							<li>Lady Orange</li>
+							<li>Marvel Vanilla</li>
+						</ul>
+					</p>
+			</span>
 		</div>
 	</div>
 </div>

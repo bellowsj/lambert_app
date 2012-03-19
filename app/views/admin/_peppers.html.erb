@@ -1,0 +1,8 @@
+<ul>
+<% @peppers.each do |pepper| %>
+	<li><%= pepper.name %> <%= link_to 'Delete', 
+	      { :controller => 'admin', :action => 'delete_pepper', :id => pepper.id },
+	      { :remote => true} %>
+	</li>
+<% end %>
+</ul>

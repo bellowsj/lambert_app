@@ -1,0 +1,8 @@
+<ul>
+<% @new_veggies.each do |veg| %>
+	<li><%= veg.name %> <%= link_to 'Delete', 
+	      { :controller => 'admin', :action => 'delete_veggie_new', :id => veg.id },
+	      { :remote => true} %>
+	</li>
+<% end %>
+</ul>

@@ -12,6 +12,7 @@ LambertApp::Application.routes.draw do
       get 'squash'
       get 'space_savers'
       get 'miscellaneous'
+      get 'heirlooms'
     end
   end
 
@@ -24,11 +25,70 @@ LambertApp::Application.routes.draw do
       get 'miscellaneous'
     end
   end
+  
+  resources :admin do
+    collection do
+      get 'petunias'
+      post 'new_petunia'
+      get 'delete_petunia'
+      get 'marigolds'
+      post 'new_marigold'
+      get 'delete_marigold'
+      get 'perennials'
+      post 'new_perennial'
+      get 'delete_perennial'
+      get 'premium'
+      post 'new_premium'
+      get 'delete_premium'
+      get 'flowers_new'
+      post 'new_flowers_new'
+      get 'delete_flowers_new'
+      get 'flowers_miscellaneous'
+      post 'new_flowers_miscellaneous'
+      get 'delete_flowers_miscellaneous'
+      get 'tomatoes'
+      post 'new_tomato'
+      get 'delete_tomato'
+      get 'peppers'
+      post 'new_pepper'
+      get 'delete_pepper'
+      get 'herbs'
+      post 'new_herb'
+      get 'delete_herb'
+      get 'melons'
+      post 'new_melon'
+      get 'delete_melon'
+      get 'cucumbers'
+      post 'new_cucumber'
+      get 'delete_cucumber'
+      get 'pumpkins'
+      post 'new_pumpkin'
+      get 'delete_pumpkin'
+      get 'squash'
+      post 'new_squash'
+      get 'delete_squash'
+      get 'space_savers'
+      post 'new_space_saver'
+      get 'delete_space_saver'
+      get 'veggies_miscellaneous'
+      post 'new_misc_veggie'
+      get 'delete_misc_veggie'
+      get 'heirlooms'
+      post 'new_heirloom'
+      get 'delete_heirloom'
+      get 'veggies_new'
+      post 'new_veggie_new'
+      get 'delete_veggie_new'
+    end
+  end
+  resources :sessions, :only => [:new, :create, :destroy]
 
   match 'contact', :to => 'pages#contact'
   match 'vegetables', :to => 'pages#vegetables'
   match 'planters', :to => 'pages#planters'
-  
+  match 'signin',     :to => 'sessions#new'
+  match 'signout',    :to => 'sessions#destroy'
+    
   root :to => 'pages#home'
 
   # The priority is based upon order of creation:
