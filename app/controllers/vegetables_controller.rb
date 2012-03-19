@@ -11,6 +11,7 @@ class VegetablesController < ApplicationController
     @title = "Tomatoes"
     @veggies_tab = true
     @active = "tomatoes"
+    @tomatoes = Tomato.find(:all).sort_by{|p| p.name.downcase}
   end
 
   def peppers
@@ -18,6 +19,7 @@ class VegetablesController < ApplicationController
     @title = "Peppers"
     @veggies_tab = true
     @active = "peppers"
+    @peppers = Pepper.find(:all).sort_by{|p| p.name.downcase}
   end
 
   def herbs
@@ -25,6 +27,7 @@ class VegetablesController < ApplicationController
     @title = "Herbs"
     @veggies_tab = true
     @active = "herbs"
+    @herbs = Herb.find(:all).sort_by{|p| p.name.downcase}
   end
 
   def melons
@@ -32,6 +35,7 @@ class VegetablesController < ApplicationController
     @title = "Melons"
     @veggies_tab = true
     @active = "melons"
+    @melons = Melon.find(:all).sort_by{|p| p.name.downcase}
   end
 
   def cucumbers
@@ -39,6 +43,7 @@ class VegetablesController < ApplicationController
     @title = "Cucumbers"
     @veggies_tab = true
     @active = "cucumbers"
+    @cucumbers = Cucumber.find(:all).sort_by{|p| p.name.downcase}
   end
 
   def pumpkins
@@ -46,6 +51,7 @@ class VegetablesController < ApplicationController
     @title = "Pumpkins"
     @veggies_tab = true
     @active = "pumpkins"
+    @pumpkins = Pumpkin.find(:all).sort_by{|p| p.name.downcase}
   end
 
   def squash
@@ -53,6 +59,7 @@ class VegetablesController < ApplicationController
     @title = "Squash"
     @veggies_tab = true
     @active = "squash"
+    @squash = Squash.find(:all).sort_by{|p| p.name.downcase}
   end
 
   def space_savers
@@ -60,6 +67,7 @@ class VegetablesController < ApplicationController
     @title = "Space Savers"
     @veggies_tab = true
     @active = "space savers"
+    @space_savers = SpaceSaver.find(:all).sort_by{|p| p.name.downcase}
   end
 
   def miscellaneous
@@ -67,6 +75,7 @@ class VegetablesController < ApplicationController
     @title = "Miscellaneous Vegetables"
     @veggies_tab = true
     @active = "miscellaneous"
+    @misc_veggies = MiscellaneousVeggie.find(:all).sort_by{|p| p.name.downcase}
   end
   
   def heirlooms
@@ -74,6 +83,7 @@ class VegetablesController < ApplicationController
     @title = "Heirlooms"
     @veggies_tab = true
     @active = "heirlooms"
+    @heirlooms = Heirloom.find(:all).sort_by{|p| p.name.downcase}
   end
 
   def new
@@ -81,6 +91,7 @@ class VegetablesController < ApplicationController
     @title = "New Vegetables for 2011"
     @veggies_tab = true
     @active = "new"
+    @new_veggies = NewVeggie.find(:all).sort_by{|p| p.name.downcase}
   end
 
 end
