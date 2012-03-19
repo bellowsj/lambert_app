@@ -349,9 +349,8 @@ h1.line {
 }
 
 .whatsNewImageTest {
-float:left;
-padding-left:10px;
-padding-right:10px;
+float:right;
+padding:10px;
 }
 
 .newsHeadDate {
