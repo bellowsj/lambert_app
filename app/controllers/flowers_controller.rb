@@ -48,7 +48,7 @@ class FlowersController < ApplicationController
   
   def new
     @current_page = "flowers"
-    @title = "New Flowers for 2012"
+    @title = "New Flowers for 2014"
     @flowers_tab = true
     @active = "new"
     @new_flowers = NewFlower.find(:all).sort_by{|p| p.name.downcase}
